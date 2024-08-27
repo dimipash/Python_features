@@ -11,7 +11,11 @@ _, _, c = [1, 2, 3]
 
 # Unpacking Nested Structures
 data = ("Alice", (25, "Engineer"))
-name, age, profession = data
+name, (age, profession) = data
+
+print(f"Name: {name}")
+print(f"Age: {age}")
+print(f"Profession: {profession}")
 
 
 # Unpacking in Function Arguments
